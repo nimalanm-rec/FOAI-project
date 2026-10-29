@@ -1,0 +1,119 @@
+{
+  "model_name": "Random Forest Classifier",
+  "algorithm": "RandomForestClassifier(n_estimators=100, max_depth=8)",
+  "framework": "scikit-learn",
+  "features": [
+    "age",
+    "dependents",
+    "employment_duration",
+    "monthly_income",
+    "monthly_expenses",
+    "credit_score",
+    "existing_loans",
+    "existing_emi",
+    "existing_debt",
+    "previous_defaults",
+    "late_payments",
+    "savings",
+    "bank_balance",
+    "requested_loan",
+    "loan_tenure",
+    "dti_ratio",
+    "loan_to_income",
+    "savings_to_loan"
+  ],
+  "n_samples": 5000,
+  "train_samples": 4000,
+  "test_samples": 1000,
+  "accuracy": 0.949,
+  "precision": 0.5727,
+  "recall": 0.9403,
+  "f1_score": 0.7119,
+  "roc_auc": 0.9876,
+  "confusion_matrix": [
+    [
+      886,
+      47
+    ],
+    [
+      4,
+      63
+    ]
+  ],
+  "feature_importances": [
+    {
+      "feature": "credit_score",
+      "importance": 0.371
+    },
+    {
+      "feature": "previous_defaults",
+      "importance": 0.2251
+    },
+    {
+      "feature": "late_payments",
+      "importance": 0.2045
+    },
+    {
+      "feature": "dti_ratio",
+      "importance": 0.0471
+    },
+    {
+      "feature": "existing_debt",
+      "importance": 0.024
+    },
+    {
+      "feature": "existing_emi",
+      "importance": 0.0222
+    },
+    {
+      "feature": "savings_to_loan",
+      "importance": 0.018
+    },
+    {
+      "feature": "existing_loans",
+      "importance": 0.0152
+    },
+    {
+      "feature": "loan_to_income",
+      "importance": 0.0118
+    },
+    {
+      "feature": "savings",
+      "importance": 0.0106
+    },
+    {
+      "feature": "age",
+      "importance": 0.0103
+    },
+    {
+      "feature": "requested_loan",
+      "importance": 0.0077
+    },
+    {
+      "feature": "monthly_income",
+      "importance": 0.0077
+    },
+    {
+      "feature": "employment_duration",
+      "importance": 0.0076
+    },
+    {
+      "feature": "monthly_expenses",
+      "importance": 0.0056
+    },
+    {
+      "feature": "bank_balance",
+      "importance": 0.0049
+    },
+    {
+      "feature": "loan_tenure",
+      "importance": 0.0049
+    },
+    {
+      "feature": "dependents",
+      "importance": 0.0019
+    }
+  ],
+  "evaluation_summary": "Trained with 80/20 stratified split. Accuracy: 94.9%, F1-Score: 71.2%, ROC-AUC: 98.8%.",
+  "dataset_notice": "Model trained and evaluated on synthetic/demo data for educational purposes."
+}
